@@ -7,24 +7,29 @@
   <meta name="keywords" content="retail, dashboard, bike spare parts, sales, purchase, expenses" />
   <meta name="author" content="Mudassir Nadeem" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="./css/style.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Sales & Purchase Dashboard | Bike Spare Parts Shop</title>
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to content</a>
+
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Header -->
   <header aria-label="Site Header">
     <div id="heading">
-    <img src="assets/shop.png" alt="Bike Spare Parts Shop Logo" width="50" />
-    <h1>Sales & Purchase Dashboard</h1>
-  </div>
+      <img src="assets/shop.png" alt="Bike Spare Parts Shop Logo" width="50" />
+      <h1>Sales & Purchase Dashboard</h1>
+    </div>
+    <!-- Hamburger Menu Button -->
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      ☰
+    </button>
   </header>
 
   <!-- Navigation -->
-  <nav aria-label="Main Navigation" role="navigation">
-    <ul>
+  <nav id="nav-menu" aria-label="Main Navigation" role="navigation">
+    <ul id="nav-items">
       <li><a href="index.html" title="Go to Dashboard">Dashboard</a></li>
       <li><a href="sales.html" title="View Sales Records">Sales</a></li>
       <li><a href="purchase.html" title="View Purchases Records">Purchases</a></li>
@@ -35,8 +40,6 @@
 
   <!-- Main Dashboard Content -->
   <main id="main">
-    
-    <!-- Quick Stats Section -->
     <section aria-labelledby="quick-stats-heading">
       <h2 id="quick-stats-heading">Quick Stats</h2>
       <div>
@@ -47,13 +50,11 @@
       </div>
     </section>
 
-    <!-- Chart Placeholder -->
     <section aria-labelledby="chart-heading">
       <h2 id="chart-heading">Sales vs Purchases Chart</h2>
       <p>(Chart will be displayed here)</p>
     </section>
 
-    <!-- Recent Activity Table -->
     <section aria-labelledby="recent-activity-heading">
       <h2 id="recent-activity-heading">Recent Activity</h2>
       <table>
@@ -75,13 +76,13 @@
         </tbody>
       </table>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mudassir Nadeem. All rights reserved.</p>
   </footer>
+
+  <script src="./js/script.js" defer></script>
 
 </body>
 </html>
